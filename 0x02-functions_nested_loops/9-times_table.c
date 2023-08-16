@@ -5,7 +5,7 @@
  * Examle Table
  * 0, 0, 0, 0, ..
  * 0, 1, 2, 3, ..
- *
+ * Return: Always 0
 */
 
 void times_table(void)
