@@ -1,26 +1,21 @@
 #include "main.h"
 
 /**
- * print number - 0-14
- * only use _putchar three times
- * Return:always 0.
+ * more_numbers - print more numbers
  */
-void more_numbers(void);
-{
-	int num, rows, count;
 
-	for (row = 1, row <= 10; row++)
+void more_numbers(void)
+{
+	int i, j;
+
+	for (i = 1; i <= 10; i++)
 	{
-		for (count = 0, count <= 14; count++)
+		for (j = 0; j <= 14; j++)
 		{
-			num = count;
-		if (count > 9)
+			if (j >= 10)
+				_putchar('1');
+			_putchar (j % 10 + '0');
 		}
-			_putchar(1 + 48);
-			num = count % 10;
-		}
-_putchar (num + 48);
+		_putchar('\n');
 	}
-	_putchar('\n')
-}
 }
